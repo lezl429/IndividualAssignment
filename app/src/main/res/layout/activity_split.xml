@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplitActivity"
+    android:background="#C7EDCC">
+
+    <!--edit text to enter amount-->
+    <TextView
+        android:id="@+id/idTILAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter total amount to split"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/idEdtAMount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:importantForAutofill="no"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/groupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Select a group: (Optional)"
+        android:textColorHint="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Other views/components before the spinner -->
+
+            <Spinner
+                android:id="@+id/friendGroupSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <!-- Other views/components after the spinner -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!--edit text to enter number of person to split amount-->
+    <TextView
+        android:id="@+id/idTILPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter number of people to split"
+        android:textColorHint="@color/black"/>
+
+    <!--edit text to enter tip amount-->
+    <EditText
+        android:id="@+id/idEdtPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:importantForAutofill="no"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+
+        <Button
+            android:id="@+id/idBtnGetAmount"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/idBtnReset"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSaveResult"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Save Result"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- text view to display amount for individual-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/idTVIndividualAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Individual Amount : "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+</LinearLayout>

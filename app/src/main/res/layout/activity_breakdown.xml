@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#C7EDCC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Bill:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter total bill amount"
+        android:imeOptions="actionNext"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/groupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Select a group: (Optional)"
+        android:textColorHint="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/friendGroupSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of People:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtNumberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Select a group."
+        android:imeOptions="actionNext"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <TextView
+        android:id="@+id/tvBreakdownResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakdown Details:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtBreakdownDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter breakdown details (e.g., 25%, 35%, 40% or 5, 7, 8)"
+        android:imeOptions="actionDone"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+
+        <Button
+            android:id="@+id/btnCalculateBreakdown"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/idBtnReset"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSaveResult"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Save Result"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

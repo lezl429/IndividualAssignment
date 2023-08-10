@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_result.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C7EDCC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvSavedResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="16dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnShareResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
+
